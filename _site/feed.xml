@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-05-11T20:27:31-04:00</updated><id>/feed.xml</id><title type="html">Taylor Lee</title><subtitle>Welcome to my Dev Blog. This is a project for COMM429, Fullstack Development. Here, you will find  introductory articles about web development, written by me. Enjoy!</subtitle><entry><title type="html">Getting Started with Markdown</title><link href="/jekyll/update/2021/05/03/getting-started-with-markdown.html" rel="alternate" type="text/html" title="Getting Started with Markdown" /><published>2021-05-03T14:25:50-04:00</published><updated>2021-05-03T14:25:50-04:00</updated><id>/jekyll/update/2021/05/03/getting-started-with-markdown</id><content type="html" xml:base="/jekyll/update/2021/05/03/getting-started-with-markdown.html">&lt;h2 id=&quot;what-is-markdown&quot;&gt;What is Markdown?&lt;/h2&gt;
+&lt;p&gt;Markdown is a markup language that adds formatting elements to plaintext text documents. Basically, you use special syntax that makes your pages pretty. Essentially, you’re writing HTML in simpler terms. When writing in Markdown, you can convert the “.md” file to HTML files! Markdown is useful because it can be used for many things (websites, emails, technical documentation), and a lot of platforms support it (Reddit, Github).&lt;/p&gt;
+
+&lt;h2 id=&quot;useful-syntax&quot;&gt;Useful Syntax&lt;/h2&gt;
+&lt;p&gt;Here are some commonly used features of Markdown that are good to note!&lt;/p&gt;
+
+&lt;h2 id=&quot;headings&quot;&gt;Headings&lt;/h2&gt;
+&lt;p&gt;Headings are denoted with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; symbol. A single &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; gives you a large heading (Heading 1), and more &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; symbols mean smaller headings (up to 6). Remember to leave a space between the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; and your heading text! For heading levels 1 and 2, they can also be written by adding lines of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; characters, respectively.&lt;/p&gt;
+
+&lt;h2 id=&quot;paragraphs&quot;&gt;Paragraphs&lt;/h2&gt;
+&lt;p&gt;Paragraphs don’t require any special syntax. To insert a line break, add a couple spaces at the end of your sentence and hit return. Alternatively, you can use the HTML br tag if the spaces are too hard to keep track of.&lt;/p&gt;
+
+&lt;h2 id=&quot;bold&quot;&gt;Bold&lt;/h2&gt;
+&lt;p&gt;By putting a word in between two asterisks or two underscores, it will make it &lt;strong&gt;bold&lt;/strong&gt;. Haha, see what I did there?&lt;/p&gt;
+
+&lt;h2 id=&quot;italic&quot;&gt;Italic&lt;/h2&gt;
+&lt;p&gt;By putting a word in between one asterisk or one underscore, &lt;em&gt;voila!&lt;/em&gt; Italics.&lt;/p&gt;
+
+&lt;h3 id=&quot;now-both&quot;&gt;Now Both!&lt;/h3&gt;
+&lt;p&gt;I don’t know why you would ever need something to be both bold and italic, but if you do, that calls for &lt;strong&gt;&lt;em&gt;three asterisks&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; in front of a paragraph will make the text a blockquote. Insert a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; with no text to make a new paragraph. You can even nest them by adding two of the arrows! You’re also able to add other Markdown elements within the blockquote, but not all of them.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Did it work?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;I guess we’ll see.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+&lt;p&gt;You can make both ordered and unordered lists. If you want to add a paragraph element or something other than a line item in between the list items, make sure to ident appropriately so it doesn’t look wonky.&lt;/p&gt;
+
+&lt;h2 id=&quot;ordered-lists&quot;&gt;Ordered Lists&lt;/h2&gt;
+&lt;p&gt;To make an ordered list, just add the items with numbers followed by periods. For example: “1. apples”. The numbers don’t have to be in numerical order, but they should start with the number one. You can indent for little inception lists.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Did&lt;/li&gt;
+  &lt;li&gt;That&lt;/li&gt;
+  &lt;li&gt;Make&lt;/li&gt;
+  &lt;li&gt;Sense&lt;/li&gt;
+  &lt;li&gt;Hopefully?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;unordered-lists&quot;&gt;Unordered Lists&lt;/h2&gt;
+&lt;p&gt;To make an unordered list, dashes, asterisks, or plus signs in front of your items work (put a space in between the asterisk and the word). Same thing goes for the indentation as well.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pineapple&lt;/li&gt;
+  &lt;li&gt;Mango&lt;/li&gt;
+  &lt;li&gt;Persimmon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;horizontal-rules&quot;&gt;Horizontal Rules&lt;/h2&gt;
+&lt;p&gt;Make a horizontal break in your page using 3 or more asterisks, dashes, or underscores. Put a blank line before and after a horizontal rule just in case.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Woohoo!&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;p&gt;Use brackets for the text you want displayed on the page, and parentheses for the actual URL. If you want a message to be displayed when the user is hovering on the link, just type in the message after the URL in quotations (while still in the parentheses). &lt;a href=&quot;www.url.com&quot; title=&quot;here's a message&quot;&gt;Click here!&lt;/a&gt;
+Angle brackets, &amp;lt; blah &amp;gt;, denotes a link as well. This method is good for emails!
+Links can also be formatted with bold and italics.&lt;/p&gt;
+
+&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+&lt;p&gt;Add an exclamation point, followed by the alt text (what displays if the picture doesn’t load), and then the path / URL. You can also add the title after the URL in quotations (while still in the parentheses).
+Example: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;![Picture of Duck.](https://www.thespruce.com/thmb/RI7NlXG8h4s0wIkUghR4d_r9wWY=/1500x1000/filters:fill(auto,1)/wood-duck-5898a1ad5f9b5874ee96a5e3.jpg)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.thespruce.com/thmb/RI7NlXG8h4s0wIkUghR4d_r9wWY=/1500x1000/filters:fill(auto,1)/wood-duck-5898a1ad5f9b5874ee96a5e3.jpg&quot; alt=&quot;Picture of Duck.&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;p&gt;Using backticks around coding terms makes them appear in a special format! For example: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;backslash&quot;&gt;Backslash&lt;/h2&gt;
+&lt;p&gt;Using a backslash indicates you are using Markdown syntax, but you want it to show up regularly. (Symbols such as asterisks, underscores, etc).&lt;/p&gt;
+
+&lt;h2 id=&quot;html&quot;&gt;HTML&lt;/h2&gt;
+&lt;p&gt;If you forget the Markdown way to write it, have no fear. You can just use HTML tags in Markdown as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;converting-to-html&quot;&gt;Converting to HTML&lt;/h2&gt;
+&lt;p&gt;Since we’ve installed Pandoc, it’s relatively easy to convert .md files to .html . Use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandoc test.md -s -o test.html&lt;/code&gt;. We did it!&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">What is Markdown? Markdown is a markup language that adds formatting elements to plaintext text documents. Basically, you use special syntax that makes your pages pretty. Essentially, you’re writing HTML in simpler terms. When writing in Markdown, you can convert the “.md” file to HTML files! Markdown is useful because it can be used for many things (websites, emails, technical documentation), and a lot of platforms support it (Reddit, Github).</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/images/mdicon.png" /><media:content medium="image" url="/assets/images/mdicon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">All About PHP</title><link href="/jekyll/update/2021/05/03/all-about-PHP.html" rel="alternate" type="text/html" title="All About PHP" /><published>2021-05-03T14:25:50-04:00</published><updated>2021-05-03T14:25:50-04:00</updated><id>/jekyll/update/2021/05/03/all-about-PHP</id><content type="html" xml:base="/jekyll/update/2021/05/03/all-about-PHP.html">&lt;h2 id=&quot;what-is-php&quot;&gt;What is PHP?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;PHP, or Hypertext Preprocessor, is an open source scripting language that is executed on the server side.&lt;/li&gt;
+  &lt;li&gt;It can create, open, read, write, delete, and close files on the server (among many other things!)&lt;/li&gt;
+  &lt;li&gt;Essentially, PHP does all the things HTML, CSS, and JS can’t do, like working with data and assembling pages&lt;/li&gt;
+  &lt;li&gt;PHP files can contain a combination of HTML and PHP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;general-notes-about-syntax&quot;&gt;General Notes About Syntax&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;File extension is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.php&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Each statement ends with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Single line comments use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//&lt;/code&gt;, multiple lines use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/* */&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Variables can operate at a global, local, and static level (all using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;PHP uses types such as string, integer, float, boolean, array, object, NULL, and resource (but you don’t need to declare them!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;basic-syntax&quot;&gt;Basic Syntax&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A PHP script begins with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;?php&lt;/code&gt; and ends with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;include&lt;/code&gt;: imports files for dynamic pages&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo&lt;/code&gt;: outputs the results of the code&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt;: same as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo&lt;/code&gt;, but has a return value of 1&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;array(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;)&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;array(&quot;Taylor&quot;=&amp;gt;&quot;20&quot;, &quot;Johnny&quot;=&amp;gt;&quot;22&quot;)&lt;/code&gt;: can be equated to a variable, can also make an array in an array (aka multidimensional). indexed at 0&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var_dump($x)&lt;/code&gt;: returns the data type and value of the variable&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;null&lt;/code&gt;: a variable that has no value assigned to it (can also be used to empty a variable)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;constants&lt;/code&gt;: a global identifier for a simple value (cannot be changed during the script)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;strings&quot;&gt;Strings&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strlen(“Hello World!”)&lt;/code&gt;: returns the length of a string&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str_word_count(“Hello World!”)&lt;/code&gt;: counts the number of words in a string&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strrev(“Hello World!”)&lt;/code&gt;: reverses a string&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strpos(“Hello World!”, “World”)&lt;/code&gt;: searches for specific text within a string. If found, returns
+number of beginning character position&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str_replace(“world, “dolly”, “Hello world!”)&lt;/code&gt;: replaces the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;world&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dolly&lt;/code&gt; in the existing string&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;numbers&quot;&gt;Numbers&lt;/h3&gt;
+&lt;p&gt;integers: a number with no decimal point (can be positive or negative)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;is_int($x)&lt;/code&gt;: checks if the variable type is an integer
+floats: a number with a decimal or exponential form&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;is_float($x)&lt;/code&gt;: checks if the variable type is a float
+other kinds of numeric operators:&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;is_finite($x)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;is_infinite($x)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;is_numeric($x)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$int_cast&lt;/code&gt;: casts float to int, or vice versa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;php-operators&quot;&gt;PHP Operators&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$x ** $y&lt;/code&gt;: raise &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$x&lt;/code&gt; to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$y&lt;/code&gt; th power&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$x % $y&lt;/code&gt;: remainder of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$x&lt;/code&gt; divided by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$y&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;php-comparison-operators&quot;&gt;PHP Comparison Operators&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;==&lt;/code&gt;: equal&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;===&lt;/code&gt;: identical&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!=&lt;/code&gt;: not equal (also &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&amp;gt;&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!==&lt;/code&gt;: not identical&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;=&amp;gt;&lt;/code&gt;: spaceship (returns an integer less than, equal to, or greater than zero depending if $x is less than, equal to, or greater than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$y&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;switch statements: selects one of many blocks of code to be executed&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+$favcolor  
+switch($favcolor){
+case “red”:
+echo “ur fav color red!”;
+break;
+case “blue”;
+echo “ur fav color blue!”;
+break;
+default:
+echo “none of these r ur fav”;
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">What is PHP? PHP, or Hypertext Preprocessor, is an open source scripting language that is executed on the server side. It can create, open, read, write, delete, and close files on the server (among many other things!) Essentially, PHP does all the things HTML, CSS, and JS can’t do, like working with data and assembling pages PHP files can contain a combination of HTML and PHP</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/images/phpicon.png" /><media:content medium="image" url="/assets/images/phpicon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Command Line Syntax</title><link href="/jekyll/update/2021/05/03/command-line-syntax.html" rel="alternate" type="text/html" title="Command Line Syntax" /><published>2021-05-03T14:25:50-04:00</published><updated>2021-05-03T14:25:50-04:00</updated><id>/jekyll/update/2021/05/03/command-line-syntax</id><content type="html" xml:base="/jekyll/update/2021/05/03/command-line-syntax.html">&lt;h2 id=&quot;what-is-the-command-line&quot;&gt;What is the Command Line?&lt;/h2&gt;
+&lt;p&gt;A command-line interface (CLI) is a user interface that’s navigated by typing commands at prompts, instead of using a mouse.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh4.googleusercontent.com/igrQsdp1002NTONj1ROz0U7zqY7V2I5uTua2mxfvPkpI2YXw-6lr4PpwHZdzLGUUHxCaekrKBswbadepVW7_5Ovr36XzJ4HH50YuL2XWfPNx55GE5Xm4dh9YtDmtRWw2Zamvcn3Q&quot; alt=&quot;Command Line Diagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-syntax&quot;&gt;Basic Syntax&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo hello&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl-c&lt;/code&gt; cancels command, as well as esc&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;man echo&lt;/code&gt; → manual that has a list of available commands, in this case it defines echo&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;man man&lt;/code&gt; → manual prints out definition of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;man&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\n&lt;/code&gt; → means newline, puts the string on to a new line&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl-a&lt;/code&gt; → moves cursor to the beginning of the line&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl-e&lt;/code&gt; → moves cursor to the end of the line&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl-u&lt;/code&gt; → clears to the beginning of the line (delete and start over)&lt;/li&gt;
+  &lt;li&gt;some systems you can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;option-click&lt;/code&gt; to go to a specific point on the line&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clear&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl-l&lt;/code&gt; → clears the screen&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exit&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ctrl-d&lt;/code&gt; → exits the program&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;“hello world” &amp;gt; file.txt&lt;/code&gt; → prints string into file&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; → prints the contents of the file on to the screen&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;“hello world” &amp;gt; file.txt&lt;/code&gt; → adds the line to the end of the file&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diff file1.txt file2.txt&lt;/code&gt; → shows the differences between two files&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt; → lists files and directories&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch file&lt;/code&gt; → creates an empty file with name file&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt; → change directories, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd ..&lt;/code&gt; to go up a directory&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls *.txt&lt;/code&gt; → lists all files ending in .txt&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -l&lt;/code&gt; → lists date and time the file was modified&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -rtl&lt;/code&gt; → reversed time of modification (most recently modified appear at bottom of screen)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.file&lt;/code&gt; → hides file&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mv test file.txt&lt;/code&gt; → renames file.txt into test_file.txt&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cp file1.txt file2.txt&lt;/code&gt; –&amp;gt; copies files&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm&lt;/code&gt; → removes files&lt;/li&gt;
+  &lt;li&gt;tab key when typing out long file name auto completes it&lt;/li&gt;
+  &lt;li&gt;double tab to see all possibilities&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm -f&lt;/code&gt; → overrides confirmation, force deletes all files specified&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">What is the Command Line? A command-line interface (CLI) is a user interface that’s navigated by typing commands at prompts, instead of using a mouse.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/images/command.png" /><media:content medium="image" url="/assets/images/command.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">File Permissions</title><link href="/jekyll/update/2021/05/03/file-permissions.html" rel="alternate" type="text/html" title="File Permissions" /><published>2021-05-03T14:25:50-04:00</published><updated>2021-05-03T14:25:50-04:00</updated><id>/jekyll/update/2021/05/03/file-permissions</id><content type="html" xml:base="/jekyll/update/2021/05/03/file-permissions.html">&lt;h2 id=&quot;what-are-file-permissions&quot;&gt;What are file permissions?&lt;/h2&gt;
+&lt;p&gt;Methods that assign permissions or access rights to specific users and groups of users.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Can control the ability of viewing, changing, navigating, and executing contents of file system (ex: hiding menu options or functions)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;permissions&quot;&gt;Permissions&lt;/h2&gt;
+&lt;p&gt;Permission driven: having access to specifics functions and options given the permission level&lt;/p&gt;
+
+&lt;p&gt;2 types of permissions: traditional Unix permissions and Access Control Lists (ACLs)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;ACLs are used on Windows-based file systems, now available in most Unix and Linux systems as well&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Microsoft, IBM DOS, and classic Mac OS variants don’t have permissions, only file attributes, meaning that it is a read only attribute that doesn’t prevent anyone from changing / deleting the file&lt;/p&gt;
+
+&lt;h3 id=&quot;traditional-unix-permissions&quot;&gt;Traditional Unix permissions&lt;/h3&gt;
+&lt;h4 id=&quot;3-scopes-user-group-and-others-in-that-order&quot;&gt;3 scopes: user, group, and others (in that order)&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;user&lt;/strong&gt;: owns files and directories&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;group&lt;/strong&gt;: assigned to the files and directories (defines the file’s group class)
+→ distinct permissions apply to the members of the file’s group, the owner may be a member of the file’s group.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;others&lt;/strong&gt;: if not an owner of the files or member of the file’s group comprise a file’s others class (different permissions)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-permissions-read-write-execute&quot;&gt;3 permissions: read, write, execute&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;read&lt;/strong&gt;: can see the names of files in directory, but nothing further&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;write&lt;/strong&gt;: can modify a file (execute needs to be set for this permission to work)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;execute&lt;/strong&gt;: search permission, access file contents and meta info if name is known (read needs to be set in order to see list of file names)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-special-modes-set-user-id-set-group-id-and-sticky-all-for-file-or-directory-overall-not-a-class&quot;&gt;3 special modes: set user ID, set group ID, and sticky (all for file or directory overall, not a class)&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;setuid&lt;/strong&gt;: assume user ID of owner in a specific file (treats user as root temporarily)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;setgid&lt;/strong&gt;: assume group ID given to group glass, new files and directories created will inherit that group&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;sticky&lt;/strong&gt;: prevents users from renaming, moving, or deleting contained files owned by users&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;notation&quot;&gt;notation:&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r&lt;/code&gt; → reading (- if not)&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w&lt;/code&gt; → writing (- if not)&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; → execution (- if not)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rwxr-xr-x&lt;/code&gt;: a regular file whose user class has full permissions and whose group and others classes have only the read and execute permissions.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">What are file permissions? Methods that assign permissions or access rights to specific users and groups of users. Can control the ability of viewing, changing, navigating, and executing contents of file system (ex: hiding menu options or functions)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/images/permission.png" /><media:content medium="image" url="/assets/images/permission.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

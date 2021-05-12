@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>File Permissions | Taylor Lee</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="File Permissions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What are file permissions? Methods that assign permissions or access rights to specific users and groups of users. Can control the ability of viewing, changing, navigating, and executing contents of file system (ex: hiding menu options or functions)" />
+<meta property="og:description" content="What are file permissions? Methods that assign permissions or access rights to specific users and groups of users. Can control the ability of viewing, changing, navigating, and executing contents of file system (ex: hiding menu options or functions)" />
+<link rel="canonical" href="/jekyll/update/2021/05/03/file-permissions.html" />
+<meta property="og:url" content="/jekyll/update/2021/05/03/file-permissions.html" />
+<meta property="og:site_name" content="Taylor Lee" />
+<meta property="og:image" content="/assets/images/permission.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-03T14:25:50-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="/assets/images/permission.png" />
+<meta property="twitter:title" content="File Permissions" />
+<script type="application/ld+json">
+{"image":"/assets/images/permission.png","@type":"BlogPosting","headline":"File Permissions","dateModified":"2021-05-03T14:25:50-04:00","datePublished":"2021-05-03T14:25:50-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll/update/2021/05/03/file-permissions.html"},"url":"/jekyll/update/2021/05/03/file-permissions.html","description":"What are file permissions? Methods that assign permissions or access rights to specific users and groups of users. Can control the ability of viewing, changing, navigating, and executing contents of file system (ex: hiding menu options or functions)","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Taylor Lee" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Taylor Lee</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/posts.html">Posts</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">File Permissions</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2021-05-03T14:25:50-04:00" itemprop="datePublished">
+        May 3, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="what-are-file-permissions">What are file permissions?</h2>
+<p>Methods that assign permissions or access rights to specific users and groups of users.</p>
+<ul>
+  <li>Can control the ability of viewing, changing, navigating, and executing contents of file system (ex: hiding menu options or functions)</li>
+</ul>
+
+<h2 id="permissions">Permissions</h2>
+<p>Permission driven: having access to specifics functions and options given the permission level</p>
+
+<p>2 types of permissions: traditional Unix permissions and Access Control Lists (ACLs)</p>
+<ul>
+  <li>ACLs are used on Windows-based file systems, now available in most Unix and Linux systems as well</li>
+</ul>
+
+<p>Microsoft, IBM DOS, and classic Mac OS variants don’t have permissions, only file attributes, meaning that it is a read only attribute that doesn’t prevent anyone from changing / deleting the file</p>
+
+<h3 id="traditional-unix-permissions">Traditional Unix permissions</h3>
+<h4 id="3-scopes-user-group-and-others-in-that-order">3 scopes: user, group, and others (in that order)</h4>
+<ul>
+  <li><strong>user</strong>: owns files and directories</li>
+  <li><strong>group</strong>: assigned to the files and directories (defines the file’s group class)
+→ distinct permissions apply to the members of the file’s group, the owner may be a member of the file’s group.</li>
+  <li><strong>others</strong>: if not an owner of the files or member of the file’s group comprise a file’s others class (different permissions)</li>
+</ul>
+
+<h4 id="3-permissions-read-write-execute">3 permissions: read, write, execute</h4>
+<ul>
+  <li><strong>read</strong>: can see the names of files in directory, but nothing further</li>
+  <li><strong>write</strong>: can modify a file (execute needs to be set for this permission to work)</li>
+  <li><strong>execute</strong>: search permission, access file contents and meta info if name is known (read needs to be set in order to see list of file names)</li>
+</ul>
+
+<h4 id="3-special-modes-set-user-id-set-group-id-and-sticky-all-for-file-or-directory-overall-not-a-class">3 special modes: set user ID, set group ID, and sticky (all for file or directory overall, not a class)</h4>
+<ul>
+  <li><strong>setuid</strong>: assume user ID of owner in a specific file (treats user as root temporarily)</li>
+  <li><strong>setgid</strong>: assume group ID given to group glass, new files and directories created will inherit that group</li>
+  <li><strong>sticky</strong>: prevents users from renaming, moving, or deleting contained files owned by users</li>
+</ul>
+
+<h4 id="notation">notation:</h4>
+<p><code class="language-plaintext highlighter-rouge">r</code> → reading (- if not)<br />
+<code class="language-plaintext highlighter-rouge">w</code> → writing (- if not)<br />
+<code class="language-plaintext highlighter-rouge">x</code> → execution (- if not)</p>
+
+<p><code class="language-plaintext highlighter-rouge">rwxr-xr-x</code>: a regular file whose user class has full permissions and whose group and others classes have only the read and execute permissions.</p>
+
+  </div><a class="u-url" href="/jekyll/update/2021/05/03/file-permissions.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Welcome to my Dev Blog. This is a project for COMM429, Fullstack Development. Here, you will find  introductory articles about web development, written by me. Enjoy!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
